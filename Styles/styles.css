@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 60%; 
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header-overlay h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 90px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text {
+    text-align: center;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.text h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.text p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.book-btn {
+    background-color: #ffcc00;
+    color: #004080;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #00c4e6;
+    transform: scale(2.2);
+}
+
+.book-btn:active {
+    background-color: #b38600;
+    transform: skewX(-15deg);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.book-btn.animate {
+    animation: pulse 1s infinite;
+}
+
+.services, .about {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.services h2, .about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.services .service, .about {
+    margin: 20px 0;
+}
+
+.services .service img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+.contact {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact label {
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #ffcc00;
+    color: #004080;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, background-color 0.3s;
+    animation:submit-btn 3s infinite;
+    
+}
+
+.submit-btn:hover {
+    background-color: #00d7e6;
+}
+
+
+.submit-btn:active {
+    background-color: #00b318;
+    transform: rotate(180deg);
+    animation:submit-btn 4s infinite;
+}
+
+.hours {
+    margin-top: 50px;
+}
+
+.hours h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media img {
+    height: 30px;
+    width: 30px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about img {
+    width: 100%;
+    height: auto;
+    max-width: 768px;
+}
+
+/* Media Queries */
+@media (max-width: 320px) {
+    .about img {
+        width: 320px;
+        height: 642px;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .about img {
+        width: 768px;
+        height: 642px;
+        object-fit: cover;
+    }
+}
